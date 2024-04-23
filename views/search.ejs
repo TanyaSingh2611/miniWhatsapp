@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%for(Chat of Chats){%>
+        <br><br>
+        from : <%=Chat.from%>
+        <br><br>
+        msg  : <%=Chat.msg%>
+        <br><br>
+        to : <%=Chat.to%>
+        <hr>
+    <%}%>
+    <br><br>
+    <form action="/chats">
+        <button>Back to Main Menu</button>
+    </form>
+</body>
+</html>
